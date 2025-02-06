@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+    color: brown;
+}
+
+h1{
+    color: violet;
+}
+
+a{
+    color: aqua;
+    text-decoration: none;
+}
+
+a:hover{
+    color:hotpink;
+}
+
+h1+p{
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li:nth-child(3) {
+    text-decoration: underline;
+}
+
+ul li::before{
+    content:"👊💪😠"
+}
+
+p::first-letter{
+    font-size:200px;
+    color: red;
+}
