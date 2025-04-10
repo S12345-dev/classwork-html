@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>MULTIPLY EACH NUMBER WITH 18</h2>
+        <p id="error"></p>
+      <script>
+         var num=[23,34,45,67,78,89,90,100]
+         function myfuction(num){
+            return num*18
+         }
+         var newarray = num.map(myfuction);
+         document.getElementById("error").innerHTML=newarray;
+        
+      </script>
+    </body>
+</html>
