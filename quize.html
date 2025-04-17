@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1><b>AREA CALCULATOR</b></h1>
+       <p id="n"></p>
+       <label>RADIUS</label>
+       <input type="number" id="radius">
+       <button onclick="circle()">Calculate circle</button><br><br><br>
+       <label>BASE</label>
+       <input type="number" id="base1">
+       <label>HEIGHT</label>
+       <input type="number" id="height1">
+       <button onclick="rectangle()">Calculate rectangle</button><br><br><br>
+       <label>BASE</label>
+       <input type="number" id="base2">
+       <label>HEIGHT</label>
+       <input type="number" id="height2">
+       <button onclick="triangle()">Calculate triangle</button><br><br>
+       <label>DIAGONAL 1</label>
+       <input type="number" id="noo">
+       <label>DIAGONAL 2</label>
+       <input type="number" id="noob">
+       <button onclick="rhombus()">Calculate rhombus</button>
+       <script>
+        function circle(){
+            const area= 3.142*radius*radius;
+            document.getElementById("n").innerHTML=`circle : ${area.toFixed(2)}`;
+
+        }
+        function rectangle(){
+            const area= height1*base1;
+            document.getElementById("n").innerHTML=`ractangle : ${area.toFixed(2)}`;
+        }
+        function triangle(){
+            const area=height2*base2 ;
+            document.getElementById("n").innerHTML=`triangle : ${area.toFixed(2)}`;
+        }
+        function rhombus(){
+            const area=noo*noob;
+            document.getElementById("n").innerHTML=`rhombus: ${area.toFixed(2)}`;
+        }
+       </script>
+       </body>
+</html>
